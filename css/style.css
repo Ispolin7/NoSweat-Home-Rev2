@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.clerfix {
+    clear: both;
+}
+/*HEADER*/
+.info-promo{
+    width: 1920px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+/* Меню*/
+
+.menu-block {
+    position: absolute;
+    z-index: 98;
+    left: 0;
+    width: 1920px;
+    background-color:rgba(133,185,228,0.5);
+
+}
+.logo{
+    float: left;
+    padding-left: 100px;
+}
+.left-logo {
+    margin: 10px;
+    border-right: 1px solid black;
+}
+.right-logo {
+    margin: 10px;
+}
+.trash {
+    padding-right: 100px;
+}
+.menu {
+    display: inline-block;
+    float: right;
+}
+
+
+/*Слайдер*/
+
+.slider{
+    position: relative;
+}
+.second-image {position: absolute}
