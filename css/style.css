@@ -1,8 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    text-transform: uppercase;
 }
+main{text-transform: uppercase;}
 .clerfix {
     clear: both;
 }
@@ -87,14 +87,17 @@ margin:  10px;
 .slider-text p{
     text-align: right;
     font-size: 30px;
+    padding-right: 30%;
 }
 .fa-sort-asc{
-    padding-right: 20px;
-    border-right: 1px solid black;
+
+}
+.fa-sort-desc{
+    margin-left: 15px;
+    border-top: 1px solid black;
+    padding: 10px;
 }
 
-
-/*Слайдер*/
 
 .slider{
     position: relative;
@@ -113,38 +116,127 @@ margin:  10px;
 /* Блок-возможности*/
 .tech-features{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .features-text{
-    float: left;
-    font-size: 50.32px;
+    width: 30%;
+    font:50.32px 'Open Sans ExtraBold', sans-serif;
+    background: linear-gradient(to right, #0E1757, #3888C2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 30px;
 }
-.features-image{float: right}
+.features-image{
+    float: right;
+    width: 65%;
+    padding-right: 30px;
+}
+.features-image img{
+    width: 100%;
+}
 
 /* Безопасность*/
 .performance-safety{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background: black;
     color: white;
-    font-size: 48px;
+    font:48px 'Open Sans ExtraBold', sans-serif;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.performance-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.performance-block:first-child{
+    padding-left: 100px;
+    width: 29%;
+}
+.performance-block:last-child{
+    padding-right: 100px;
+    width: 18%;
+}
+.performance-text {
+    padding-left: 30px;
 }
 /* Видео блок*/
 .video-block{
-    background-color: silver;
+    background-color: #F3F3F3;
+    width: 100%;
+    padding-top: 30px;
+}
+.video-info {
+    float: left;
+    padding-left: 100px;
+}
+.game-changer h2{
+    font:60px 'Open Sans ExtraBold', sans-serif;
+    background: linear-gradient(to right, #0E1757, #3888C2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.game-changer h3{
+    font:700 20px 'Open Sans', sans-serif;
+    padding-bottom: 20px;
+}
+.game-changer p{
+    font:400 18px 'Open Sans', sans-serif;
+    padding-bottom: 3px;
+}
+.price{
+    border-left: 2px solid #E1E1E1;
+    padding: 5px 0 5px 15px;
+    margin: 10px 0 10px 0;
+}
+.price p{
+    font:400 34px 'Open Sans', sans-serif;
+    padding-bottom: 3px;
+    color: #056CB6;
+}
+.button{
+    width: 45%;
+    font: 600 32px 'Myriad Pro';
+    padding: 30px 50px 30px 50px;
+    border: 3px solid #1877BB;
+    border-radius: 50px;
+    text-align: center;
+}
+.info-logo {
+    padding: 20px 0 40px 20px;
+}
+.video{
+    float: right;
+    width: 50%;
+    margin-right: 3%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+.video img{
     width: 100%;
 }
-.video-info {float: left}
-.video{float: right}
 
 /* Проффесионалы */
 
-.pros {width: 100%}
+.pros {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 .pros-text{
     width: 100%;
     text-align: center;
-    font-size: 60px;
+    font: 60px 'Open Sans ExtraBold', sans-serif;
+    background: linear-gradient(to right, #0E1757, #3888C2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .pros-logo{
     width: 100%;
@@ -152,22 +244,58 @@ margin:  10px;
     justify-content: center;
     align-items: center;
 }
+.pros-logo img{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.pros-circle {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+.circle{
+    width: 15px;
+    height: 15px;
+    background: #4A91C8;
+    display: inline-block;
+    border: 1px solid #4A91C8;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.circle1{
+    background: #0D6CB6;
+}
 
 /*Инстаграм*/
 .instagram {
     width: 100%;
     position: relative;
     font-size: 0;
+    color: white;
 }
 .instagram>img{width: 100%}
 .nosweatco {
     position: absolute;
-    top: 20%;
-    left: 23%;
+    width: 100%;
+    text-align: center;
+    top: 14%;
+
 }
 .nosweatco p{
-    font-size: 36px;
+    font: 36px 'Open Sans ExtraBold',sans-serif;
     text-align: center;
+}
+.nosweatco h5{
+    text-align: center;
+    font-size: 50px;
+}
+.nosweatco img{
+    width: 12.5%;
+    padding: 0.5%;
+}
+.nosweatco-toprow, .nosweatco-downprow{
+    width: 100%;
 }
 
 /* Линии*/
@@ -209,14 +337,15 @@ margin:  10px;
 .liners-text {
     background: inherit;
     color: white;
-    font-size: 58px;
+    font: 500 58px 'ChunkFive';
     text-align: center;
 }
 .liners-buttom{
     background: blue;
     color: white;
     text-align: center;
-    font-size: 29px;
+    font:500 29px 'Open Sans';
+    padding: 10px;
 }
 
 /*Большое видео*/
@@ -230,34 +359,51 @@ margin:  10px;
 .delivered-text{
     width: 100%;
     position: absolute;
-    top: 50%;
+    top: 33%;
+    text-align: center;
 }
 .delivered-text h2{
     text-align: center;
     color: white;
-    font-size: 60px;
+    font: 60px 'Open Sans ExtraBold';
 }
 .delivered-text p{
     text-align: center;
     color: white;
-    font-size: 20px;
+    font: 400 20px 'Open Sans';
+}
+.delivered-icon img{
+    width: 8%;
+    padding-top: 20px;
 }
 
-
+/***************Подвал**************************/
 
 footer{
     background: #0D6CB6;
     color: white;
-    font-size: 13px;
+    font: 400 13px 'Open Sans';
     width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
     text-transform: none;
 }
+footer h4{
+    font: 700 14px 'Open Sans';
+    text-transform: uppercase;
+}
+footer h2{
+    font: 700 20px 'Open Sans';
+    text-transform: uppercase;
+}
 .down-footer{
     width: 100%;
     background: #0D6CB6;
-
+}
+.down-footer a{
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
 }
 .year {
     float: left;
@@ -265,7 +411,7 @@ footer{
 }
 .social_network{
     float: right;
-    margin-right: 30px;
+    margin-right: 13%;
 }
 .social_network li{
     display: inline-block;
@@ -294,7 +440,7 @@ footer{
 .about p{
     padding-bottom: 15px;
 }
-.addres span{
+.addres div{
     display: inline-block;
 }
 .contact-information p{
@@ -304,4 +450,20 @@ footer{
 .addres p{
     padding-top: 10px;
     padding-right: 20px;
+}
+.addres{
+    padding-top: 20px;
+}
+.location{
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: right;
+}
+.fa-location-arrow{
+    color: #0D6CB6;
+    background-color: white;
+    font-size: 20px;
+    padding: 2px 10px 2px 10px;
 }
