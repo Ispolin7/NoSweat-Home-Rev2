@@ -1,18 +1,23 @@
 *{
     margin: 0;
     padding: 0;
+    text-transform: uppercase;
 }
 .clerfix {
     clear: both;
 }
 /*HEADER*/
 .info-promo{
-    width: 1920px;
+    width: 100%;
     background-color: black;
     color: white;
     text-align: center;
     margin: auto;
     position: relative;
+    font: 600 20px 'Open Sans', sans-serif;
+}
+.info-promo p{
+    padding: 10px;
 }
 /* Меню*/
 
@@ -20,27 +25,72 @@
     position: absolute;
     z-index: 98;
     left: 0;
-    width: 1920px;
+    width: 100%;
     background-color:rgba(133,185,228,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
 }
 .logo{
-    float: left;
     padding-left: 100px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .left-logo {
+    border-right: 3px solid black;
     margin: 10px;
-    border-right: 1px solid black;
+    padding-right: 20px;
 }
 .right-logo {
-    margin: 10px;
+margin:  10px;
 }
 .trash {
     padding-right: 100px;
+    padding-left: 50px;
 }
 .menu {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu li{
     display: inline-block;
-    float: right;
+    font: 600 20px 'Open Sans', sans-serif;
+    color: white;
+    padding-right: 20px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+.fa-shopping-cart{
+    font-size: 40px;
+}
+.slider-text{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    color: white;
+}
+.slider-text h2{
+    text-align: center;
+    font: 149px 'BRUSHSTRIKE', sans-serif;
+}
+.slider-text h3 {
+    text-align: center;
+    font: 600 60px 'Bebas Neue Regular', sans-serif;
+}
+.slider-text p{
+    text-align: right;
+    font-size: 30px;
+}
+.fa-sort-asc{
+    padding-right: 20px;
+    border-right: 1px solid black;
 }
 
 
@@ -48,5 +98,210 @@
 
 .slider{
     position: relative;
+    width: 100%;
 }
-.second-image {position: absolute}
+.slider-image>img{width: 100%}
+.second-image {
+    position: absolute;
+    top: 0;
+    width: 75%;
+}
+.second-image img{
+    width: 100%;
+}
+
+/* Блок-возможности*/
+.tech-features{
+    width: 100%;
+}
+.features-text{
+    float: left;
+    font-size: 50.32px;
+}
+.features-image{float: right}
+
+/* Безопасность*/
+.performance-safety{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+    color: white;
+    font-size: 48px;
+}
+/* Видео блок*/
+.video-block{
+    background-color: silver;
+    width: 100%;
+}
+.video-info {float: left}
+.video{float: right}
+
+/* Проффесионалы */
+
+.pros {width: 100%}
+.pros-text{
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+}
+.pros-logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Инстаграм*/
+.instagram {
+    width: 100%;
+    position: relative;
+    font-size: 0;
+}
+.instagram>img{width: 100%}
+.nosweatco {
+    position: absolute;
+    top: 20%;
+    left: 23%;
+}
+.nosweatco p{
+    font-size: 36px;
+    text-align: center;
+}
+
+/* Линии*/
+
+.buy{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.liners{
+    width: 31%;
+    margin: 1%;
+    position: relative;
+    vertical-align: middle;
+    background: black;
+}
+.liners>img{width: 100%}
+.name{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+.name img{width: 100%}
+.img-absolute{
+    position: absolute;
+    right: 0;
+    top: 14%;
+    z-index: 9;
+    width: 52%;
+}
+.img-absolute img{width: 100%}
+.liners-down-block{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 10;
+}
+.liners-text {
+    background: inherit;
+    color: white;
+    font-size: 58px;
+    text-align: center;
+}
+.liners-buttom{
+    background: blue;
+    color: white;
+    text-align: center;
+    font-size: 29px;
+}
+
+/*Большое видео*/
+.delivered {
+    width: 100%;
+    position: relative;
+    background: black;
+    font-size: 0;
+}
+.delivered img{width: 100%}
+.delivered-text{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+}
+.delivered-text h2{
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}
+.delivered-text p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+footer{
+    background: #0D6CB6;
+    color: white;
+    font-size: 13px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-transform: none;
+}
+.down-footer{
+    width: 100%;
+    background: #0D6CB6;
+
+}
+.year {
+    float: left;
+    margin-left: 30px;
+}
+.social_network{
+    float: right;
+    margin-right: 30px;
+}
+.social_network li{
+    display: inline-block;
+}
+.top-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.right-top{
+    width: 37%;
+    border-bottom: 1px solid black;
+}
+.left-top{
+    width: 37%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+.about{
+    width: 50%;
+}
+.about p{
+    padding-bottom: 15px;
+}
+.addres span{
+    display: inline-block;
+}
+.contact-information p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.addres p{
+    padding-top: 10px;
+    padding-right: 20px;
+}
